@@ -51,38 +51,8 @@ export const siteConfig = {
     },
     {
       file: "shop-1.jpg",
-      alt: "Street view of The Dry Cleaners of Hampstead frontage",
+      alt: "Street view of Dry Cleaners of Hampstead frontage",
       caption: "Shopfront on Haverstock Hill",
-    },
-    {
-      file: "shop-2.jpg",
-      alt: "Closer view of Dry Cleaners of Hampstead fascia and door",
-      caption: "Fascia & entrance",
-    },
-    {
-      file: "shop-3.jpg",
-      alt: "Dry Cleaners of Hampstead with hanging flower baskets",
-      caption: "Hanging baskets",
-    },
-    {
-      file: "shop-4.jpg",
-      alt: "Haverstock Hill row including Dry Cleaners of Hampstead",
-      caption: "Neighbourhood row",
-    },
-    {
-      file: "shop-5.jpg",
-      alt: "Dry Cleaners of Hampstead toward the bus stop",
-      caption: "Toward Steele’s Village stop",
-    },
-    {
-      file: "shop-6.jpg",
-      alt: "Alternate street angle of Dry Cleaners of Hampstead",
-      caption: "Street angle",
-    },
-    {
-      file: "shop-7.jpg",
-      alt: "Dry Cleaners of Hampstead storefront photo looking along Haverstock Hill",
-      caption: "Along the hill",
     },
   ],
   services: [

@@ -45,7 +45,7 @@ export default function AboutPage() {
           <div className="overflow-hidden rounded-lg border border-hairline">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={withBase("/assets/shop-2.jpg")}
+              src={withBase("/assets/shop-1.jpg")}
               alt="Dry Cleaners of Hampstead fascia and entrance on Haverstock Hill"
               className="aspect-[16/10] w-full object-cover"
               loading="lazy"

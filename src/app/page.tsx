@@ -136,7 +136,7 @@ export default function HomePage() {
               <div className="relative min-h-[200px]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={withBase("/assets/shop-7.jpg")}
+                  src={withBase("/assets/hero.jpg")}
                   alt="Looking along Haverstock Hill at Dry Cleaners of Hampstead"
                   className="absolute inset-0 h-full w-full object-cover"
                   loading="lazy"
