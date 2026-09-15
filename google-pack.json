@@ -3,9 +3,9 @@
   "address": "80 Haverstock Hill, Belsize Park, London NW3 2BE",
   "phone": "020 7284 4905",
   "rating": 5.0,
-  "reviewCount": null,
-  "ratingConfirm": true,
-  "ratingNote": "CONFIRM: hampsteadvillagelondon.com reports Rated 5.0/5 on Google but review count not stated clearly; page also says 'no reviews yet' in one section — inconsistent. Yelp shows 1.0 from 1 review. Use 5.0 Google with CONFIRM; do not invent a review count.",
+  "reviewCount": 28,
+  "ratingConfirm": false,
+  "ratingNote": "Google Maps: 5.0 from 28 reviews (verified 2026-09-15).",
   "reviews": [
     {
       "quote": "Nick is superb and never disappoints. The job is always done to a brilliant standard.",
@@ -43,6 +43,16 @@
       "source": "Google themes via hampsteadvillagelondon.com"
     }
   ],
-  "photos": [],
-  "notes": "PHOTO BLOCKER: No shop photos downloaded (Maps blocked; HV listing image 404; Yelp empty). Rating CONFIRM 5.0 Google vs Yelp 1.0/1. Review count unknown."
+  "photos": [
+    "hero.jpg",
+    "hero-full.jpg",
+    "shop-1.jpg",
+    "shop-2.jpg",
+    "shop-3.jpg",
+    "shop-4.jpg",
+    "shop-5.jpg",
+    "shop-6.jpg",
+    "shop-7.jpg"
+  ],
+  "notes": "8 real photos of 80 Haverstock Hill (1 Maps listing + Street View angles). Rating 5.0/28."
 }

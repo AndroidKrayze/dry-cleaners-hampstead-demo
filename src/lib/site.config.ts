@@ -38,11 +38,53 @@ export const siteConfig = {
   hoursConflict: true,
   rating: {
     value: 5.0,
-    count: null as number | null,
+    count: 28 as number | null,
     label: "Google",
-    confirm: true,
-    note: "CONFIRM — listed 5.0 on Google via local directories; review count unclear; Yelp shows a conflicting single review.",
+    confirm: false,
+    note: "Google Maps listing: 5.0 from 28 reviews (verified 2026-09-15).",
   },
+  photos: [
+    {
+      file: "hero.jpg",
+      alt: "Dry Cleaners of Hampstead storefront on Haverstock Hill",
+      caption: "80 Haverstock Hill",
+    },
+    {
+      file: "shop-1.jpg",
+      alt: "Street view of The Dry Cleaners of Hampstead frontage",
+      caption: "Shopfront on Haverstock Hill",
+    },
+    {
+      file: "shop-2.jpg",
+      alt: "Closer view of Dry Cleaners of Hampstead fascia and door",
+      caption: "Fascia & entrance",
+    },
+    {
+      file: "shop-3.jpg",
+      alt: "Dry Cleaners of Hampstead with hanging flower baskets",
+      caption: "Hanging baskets",
+    },
+    {
+      file: "shop-4.jpg",
+      alt: "Haverstock Hill row including Dry Cleaners of Hampstead",
+      caption: "Neighbourhood row",
+    },
+    {
+      file: "shop-5.jpg",
+      alt: "Dry Cleaners of Hampstead toward the bus stop",
+      caption: "Toward Steele’s Village stop",
+    },
+    {
+      file: "shop-6.jpg",
+      alt: "Alternate street angle of Dry Cleaners of Hampstead",
+      caption: "Street angle",
+    },
+    {
+      file: "shop-7.jpg",
+      alt: "Dry Cleaners of Hampstead storefront photo looking along Haverstock Hill",
+      caption: "Along the hill",
+    },
+  ],
   services: [
     {
       id: "dry-cleaning",
@@ -121,7 +163,7 @@ export const siteConfig = {
     "Card and contactless mentioned on one public listing — please ask in store to confirm.",
   ctaLabel: "Call 020 7284 4905",
   trustStrip: [
-    "5.0 Google (confirm live)",
+    "5.0 Google · 28 reviews",
     "Silk specialists",
     "Belsize Park",
     "Call to drop off",

@@ -6,6 +6,8 @@ export function JsonLd() {
     "@type": ["DryCleaningOrLaundry", "LocalBusiness"],
     name: siteConfig.name,
     telephone: siteConfig.phoneTel,
+    image:
+      "https://androidkrayze.github.io/dry-cleaners-hampstead-demo/assets/hero.jpg",
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.address.line1,
@@ -17,6 +19,12 @@ export function JsonLd() {
     url: "https://androidkrayze.github.io/dry-cleaners-hampstead-demo/",
     description:
       "Neighbourhood dry cleaners on Haverstock Hill, Belsize Park — silk specialist care, alterations, shoe repair. Call to enquire.",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: siteConfig.rating.value,
+      reviewCount: siteConfig.rating.count,
+      bestRating: 5,
+    },
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",

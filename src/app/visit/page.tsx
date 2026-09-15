@@ -3,6 +3,7 @@ import { siteConfig } from "@/lib/site.config";
 import { CallLink } from "@/components/CallLink";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { CallBand } from "@/components/CallBand";
+import { withBase } from "@/lib/paths";
 
 export const metadata: Metadata = {
   title: "Visit",
@@ -70,6 +71,15 @@ export default function VisitPage() {
           </div>
 
           <div className="space-y-6">
+            <div className="overflow-hidden rounded-lg border border-hairline">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={withBase("/assets/shop-1.jpg")}
+                alt="Dry Cleaners of Hampstead at 80 Haverstock Hill"
+                className="aspect-[16/10] w-full object-cover"
+                loading="lazy"
+              />
+            </div>
             <div className="overflow-hidden rounded-lg border border-hairline bg-mist">
               <iframe
                 title="Map — 80 Haverstock Hill NW3 2BE"

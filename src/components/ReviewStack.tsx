@@ -18,8 +18,7 @@ export function ReviewStack() {
           What guests notice
         </h2>
         <p className="mt-2 text-sm text-ink-mute">
-          ★ {siteConfig.rating.value} Google
-          {siteConfig.rating.confirm ? " · confirm live listing" : ""}
+          ★ {siteConfig.rating.value} Google · {siteConfig.rating.count} reviews
         </p>
         <ul className="mt-8 space-y-4">
           {siteConfig.reviewQuotes.map((q, i) => (

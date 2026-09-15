@@ -1,17 +1,18 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/site.config";
+import { withBase } from "@/lib/paths";
 import { CallLink } from "@/components/CallLink";
 import { ServicesRail } from "@/components/ServicesRail";
 import { ReviewStack } from "@/components/ReviewStack";
 import { CallBand } from "@/components/CallBand";
+import { Gallery } from "@/components/Gallery";
 
 export default function HomePage() {
   return (
     <>
       <section className="relative overflow-hidden bg-ink text-crisp">
-        <div className="pointer-events-none absolute inset-0 mist-grid opacity-20" />
-        <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:py-24">
-          <div>
+        <div className="relative mx-auto grid max-w-6xl gap-0 lg:grid-cols-2 lg:items-stretch">
+          <div className="relative flex flex-col justify-center px-4 py-16 sm:px-6 lg:py-24">
             <p className="text-xs uppercase tracking-[0.22em] text-cobalt">
               Silk specialists · Haverstock Hill
             </p>
@@ -24,8 +25,8 @@ export default function HomePage() {
               silk care, alterations and shoe repair in Belsize Park.
             </p>
             <p className="mt-3 text-sm font-medium text-cobalt">
-              ★ {siteConfig.rating.value} Google
-              {siteConfig.rating.confirm ? " · confirm live" : ""}
+              ★ {siteConfig.rating.value} Google · {siteConfig.rating.count}{" "}
+              reviews
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <CallLink className="!bg-cobalt hover:!bg-cobalt/90">
@@ -39,33 +40,33 @@ export default function HomePage() {
               >
                 Directions
               </a>
+              <a
+                href="#gallery"
+                className="inline-flex items-center justify-center rounded-full px-4 py-3 text-sm text-mist/80 underline-offset-4 hover:text-cobalt hover:underline"
+              >
+                Gallery
+              </a>
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-sm">
-            <div className="rounded-lg border border-dashed border-cobalt/50 bg-crisp p-6 text-ink shadow-stub">
-              <div className="flex items-start justify-between">
-                <p className="text-[10px] uppercase tracking-[0.2em] text-cobalt">
-                  Ticket stub
-                </p>
-                <span
-                  className="h-3 w-8 rounded-sm bg-cobalt/20"
-                  aria-hidden
-                  title="Cobalt stitch corner"
-                />
-              </div>
-              <p className="mt-4 font-display text-2xl">{siteConfig.name}</p>
-              <p className="mt-1 text-sm text-ink-mute">
-                {siteConfig.address.line1} · {siteConfig.address.postcode}
-              </p>
-              <div className="receipt-dash my-4" />
-              <p className="text-sm">Call to drop off</p>
-              <p className="mt-1 font-semibold text-cobalt">
-                {siteConfig.phoneDisplay}
-              </p>
-              <p className="mt-4 text-xs text-ink-mute/70">
-                Near Belsize Park tube · Chalk Farm nearby
-              </p>
+          <div className="relative min-h-[280px] sm:min-h-[360px] lg:min-h-full">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={withBase("/assets/hero.jpg")}
+              alt="Dry Cleaners of Hampstead storefront at 80 Haverstock Hill"
+              className="absolute inset-0 h-full w-full object-cover object-[center_35%]"
+            />
+            <div
+              className="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent lg:bg-gradient-to-r lg:from-ink/40 lg:via-transparent lg:to-transparent"
+              aria-hidden
+            />
+            <div className="absolute bottom-4 left-4 right-4 flex flex-wrap gap-2 sm:bottom-6 sm:left-6">
+              <span className="rounded-full bg-crisp/95 px-3 py-1.5 text-[11px] font-medium uppercase tracking-[0.16em] text-ink">
+                ★ {siteConfig.rating.value} · {siteConfig.rating.count} reviews
+              </span>
+              <span className="rounded-full border border-crisp/40 bg-ink/50 px-3 py-1.5 text-[11px] uppercase tracking-[0.16em] text-crisp backdrop-blur">
+                80 Haverstock Hill
+              </span>
             </div>
           </div>
         </div>
@@ -89,13 +90,14 @@ export default function HomePage() {
 
       <section className="py-14" aria-labelledby="silk-heading">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:items-center">
-          <div className="mist-grid min-h-[220px] rounded-lg border border-hairline p-8">
-            <p className="font-display text-3xl italic text-ink">
-              Silk care on Haverstock Hill.
-            </p>
-            <p className="mt-4 text-sm text-ink-mute">
-              Careful silk and everyday dry cleaning on Haverstock Hill.
-            </p>
+          <div className="relative min-h-[240px] overflow-hidden rounded-lg border border-hairline">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={withBase("/assets/shop-1.jpg")}
+              alt="Street view of Dry Cleaners of Hampstead on Haverstock Hill"
+              className="absolute inset-0 h-full w-full object-cover"
+              loading="lazy"
+            />
           </div>
           <div>
             <p className="text-xs uppercase tracking-[0.2em] text-cobalt">
@@ -123,31 +125,46 @@ export default function HomePage() {
         </div>
       </section>
 
+      <Gallery />
+
       <ReviewStack />
 
       <section className="py-14" aria-labelledby="visit-teaser">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="rounded-lg border border-hairline bg-mist/50 p-8 sm:p-10">
-            <p className="text-xs uppercase tracking-[0.2em] text-cobalt">
-              Visit
-            </p>
-            <h2
-              id="visit-teaser"
-              className="mt-2 font-display text-3xl text-ink"
-            >
-              {siteConfig.address.full}
-            </h2>
-            <p className="mt-3 max-w-2xl text-sm text-ink-mute">
-              {siteConfig.hoursConfirmNote}
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <CallLink />
-              <Link
-                href="/visit/"
-                className="inline-flex items-center rounded-full border border-ink/20 bg-crisp px-5 py-3 text-sm font-medium text-ink hover:border-cobalt hover:text-cobalt"
-              >
-                Hours & map
-              </Link>
+          <div className="overflow-hidden rounded-lg border border-hairline bg-mist/50">
+            <div className="grid lg:grid-cols-2">
+              <div className="relative min-h-[200px]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={withBase("/assets/shop-7.jpg")}
+                  alt="Looking along Haverstock Hill at Dry Cleaners of Hampstead"
+                  className="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="p-8 sm:p-10">
+                <p className="text-xs uppercase tracking-[0.2em] text-cobalt">
+                  Visit
+                </p>
+                <h2
+                  id="visit-teaser"
+                  className="mt-2 font-display text-3xl text-ink"
+                >
+                  {siteConfig.address.full}
+                </h2>
+                <p className="mt-3 max-w-2xl text-sm text-ink-mute">
+                  {siteConfig.hoursConfirmNote}
+                </p>
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <CallLink />
+                  <Link
+                    href="/visit/"
+                    className="inline-flex items-center rounded-full border border-ink/20 bg-crisp px-5 py-3 text-sm font-medium text-ink hover:border-cobalt hover:text-cobalt"
+                  >
+                    Hours & map
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site.config";
+import { withBase } from "@/lib/paths";
 import { CallLink } from "@/components/CallLink";
 import { CallBand } from "@/components/CallBand";
 
@@ -41,10 +42,14 @@ export default function AboutPage() {
               fuller service than “just dry cleaning.”
             </p>
           </div>
-          <div className="mist-grid rounded-lg border border-hairline p-8">
-            <p className="font-display text-2xl italic text-ink">
-              Pressed shirt clarity. Cobalt stitch. No spa green, no barber brass.
-            </p>
+          <div className="overflow-hidden rounded-lg border border-hairline">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={withBase("/assets/shop-2.jpg")}
+              alt="Dry Cleaners of Hampstead fascia and entrance on Haverstock Hill"
+              className="aspect-[16/10] w-full object-cover"
+              loading="lazy"
+            />
           </div>
           <div>
             <h2 className="font-display text-2xl text-ink">
