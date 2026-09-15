@@ -1,0 +1,48 @@
+{
+  "name": "Dry Cleaners of Hampstead",
+  "address": "80 Haverstock Hill, Belsize Park, London NW3 2BE",
+  "phone": "020 7284 4905",
+  "rating": 5.0,
+  "reviewCount": null,
+  "ratingConfirm": true,
+  "ratingNote": "CONFIRM: hampsteadvillagelondon.com reports Rated 5.0/5 on Google but review count not stated clearly; page also says 'no reviews yet' in one section — inconsistent. Yelp shows 1.0 from 1 review. Use 5.0 Google with CONFIRM; do not invent a review count.",
+  "reviews": [
+    {
+      "quote": "Nick is superb and never disappoints. The job is always done to a brilliant standard.",
+      "author": "Public review summary",
+      "source": "Google themes via hampsteadvillagelondon.com"
+    },
+    {
+      "quote": "Quick service, friendly owner, and reasonable prices.",
+      "author": "Public review summary",
+      "source": "Google themes via hampsteadvillagelondon.com"
+    },
+    {
+      "quote": "Quality, craftsmanship, and service are unmatched compared to other dry cleaners in the area.",
+      "author": "Public review summary",
+      "source": "Google themes via hampsteadvillagelondon.com"
+    },
+    {
+      "quote": "Friendly, efficient service that is reliable.",
+      "author": "Public review summary",
+      "source": "Google themes via hampsteadvillagelondon.com"
+    },
+    {
+      "quote": "The quality of cleaning at Dry Cleaners Of Hampstead was excellent with great service.",
+      "author": "Public review summary",
+      "source": "Google themes via hampsteadvillagelondon.com"
+    },
+    {
+      "quote": "They use a process that cleans clothes without leaving an awful smell.",
+      "author": "Public review summary",
+      "source": "Google themes via hampsteadvillagelondon.com"
+    },
+    {
+      "quote": "Overall excellent service with no reason to go anywhere else for perfect dry cleaning.",
+      "author": "Public review summary",
+      "source": "Google themes via hampsteadvillagelondon.com"
+    }
+  ],
+  "photos": [],
+  "notes": "PHOTO BLOCKER: No shop photos downloaded (Maps blocked; HV listing image 404; Yelp empty). Rating CONFIRM 5.0 Google vs Yelp 1.0/1. Review count unknown."
+}

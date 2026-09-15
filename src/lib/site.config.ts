@@ -36,6 +36,13 @@ export const siteConfig = {
   hoursConfirmNote:
     "Hours differ across public listings — please call 020 7284 4905 to confirm before you visit.",
   hoursConflict: true,
+  rating: {
+    value: 5.0,
+    count: null as number | null,
+    label: "Google",
+    confirm: true,
+    note: "CONFIRM — listed 5.0 on Google via local directories; review count unclear; Yelp shows a conflicting single review.",
+  },
   services: [
     {
       id: "dry-cleaning",
@@ -82,36 +89,48 @@ export const siteConfig = {
   ],
   reviewQuotes: [
     {
-      text: "Careful with delicate and expensive items — exactly what you want from a local cleaner.",
-      source: "Public review theme",
+      text: "Nick is superb and never disappoints. The job is always done to a brilliant standard.",
+      source: "Google (directory summary)",
     },
     {
-      text: "Known for silk specialist care on the directories — a proper neighbourhood dry cleaner.",
-      source: "Directory reputation",
+      text: "Quick service, friendly owner, and reasonable prices.",
+      source: "Google (directory summary)",
     },
     {
-      text: "Friendly, gentlemanly service; one review stream mentions Nick.",
-      source: "Public reviews (confirm current)",
+      text: "Quality, craftsmanship, and service are unmatched compared to other dry cleaners in the area.",
+      source: "Google (directory summary)",
     },
     {
-      text: "A greener feel in-shop — less chemical smell noted by at least one guest.",
-      source: "AllInLondon review theme",
+      text: "Friendly, efficient service that is reliable.",
+      source: "Google (directory summary)",
     },
     {
-      text: "Reliable quality compared with other local cleaners.",
-      source: "Directory summary themes",
+      text: "The quality of cleaning was excellent with great service.",
+      source: "Google (directory summary)",
+    },
+    {
+      text: "They use a process that cleans clothes without leaving an awful smell.",
+      source: "Google (directory summary)",
+    },
+    {
+      text: "Overall excellent service with no reason to go anywhere else for perfect dry cleaning.",
+      source: "Google (directory summary)",
     },
   ],
   paymentNote:
     "Card and contactless mentioned on one public listing — please ask in store to confirm.",
   ctaLabel: "Call 020 7284 4905",
   trustStrip: [
+    "5.0 Google (confirm live)",
     "Silk specialists",
     "Belsize Park",
     "Call to drop off",
-    "~5.0 Google (confirm live)",
   ],
-  demoNote: "Demo site — built for Dry Cleaners of Hampstead, Belsize Park.",
+  suggestedDomains: [
+    "drycleanersofhampstead.co.uk",
+    "hampsteaddrycleaners.co.uk",
+    "haverstockdrycleaners.co.uk",
+  ],
 } as const;
 
 export type SiteConfig = typeof siteConfig;

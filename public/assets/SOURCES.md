@@ -1,14 +1,19 @@
-# Image sources — Dry Cleaners of Hampstead demo
+# Image sources — Dry Cleaners of Hampstead (80 Haverstock Hill, NW3 2BE)
 
-No shop / garment / interior photos are used on this demo build.
+**Pulled:** 2026-09-15 (UTC)
 
-Per project rules: do not invent, AI-generate, or use Unsplash/Pexels stock as fake shop imagery.
+## Photos
+No verified public shopfront/interior photos for **this address only** could be downloaded in this pass.
 
-Visual treatment uses brand colour blocks (ink navy `#0B1F33`, mist `#E8EEF2`, crisp white `#FAFBFC`, cobalt stitch `#2F6FED`) and typography only.
-
-When real public photos are pulled from Google Maps / Yelp / verified listings for **80 Haverstock Hill, NW3 2BE**, document each here:
+| Attempt | Result |
+|---------|--------|
+| Google Maps / lh3 | JS-shell / blocked; CID page returned no photo CDN URLs. |
+| hampsteadvillagelondon.com listing image | URL referenced (`.../dry-cleaners-of-hampstead-ZDjm.webp`) returned HTTP 404 on fetch. |
+| Yelp | Listing exists; photo gallery empty / page blocked scraping. |
+| Street View Static | Requires API key. |
 
 | File | Source URL | Platform | Date pulled | Notes |
 |------|------------|----------|-------------|-------|
-| — | — | — | — | Replace with owner-supplied assets on close |
+| — | — | — | 2026-09-15 | UI uses brand colour/ticket motif until Google/Yelp assets for 80 Haverstock Hill are available |
 
+Do not use photos from other dry cleaners.

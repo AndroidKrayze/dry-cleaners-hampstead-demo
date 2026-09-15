@@ -61,8 +61,8 @@ export default function VisitPage() {
               ))}
             </ul>
             <p className="mt-4 text-xs text-ink-mute">
-              Demo default from the more detailed public listing pattern.
-              Listings disagree — always confirm by phone.
+              
+              Listings can disagree — always confirm by phone.
             </p>
             <p className="mt-2 text-xs text-ink-mute">
               {siteConfig.paymentNote}

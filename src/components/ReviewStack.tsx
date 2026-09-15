@@ -1,6 +1,10 @@
+"use client";
+
+import { motion, useReducedMotion } from "framer-motion";
 import { siteConfig } from "@/lib/site.config";
 
 export function ReviewStack() {
+  const reduce = useReducedMotion();
   return (
     <section className="bg-mist/60 py-14" aria-labelledby="reviews-heading">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -13,11 +17,19 @@ export function ReviewStack() {
         >
           What guests notice
         </h2>
+        <p className="mt-2 text-sm text-ink-mute">
+          ★ {siteConfig.rating.value} Google
+          {siteConfig.rating.confirm ? " · confirm live listing" : ""}
+        </p>
         <ul className="mt-8 space-y-4">
           {siteConfig.reviewQuotes.map((q, i) => (
-            <li
+            <motion.li
               key={i}
               className="border-l-[3px] border-cobalt bg-crisp px-5 py-4 shadow-stub"
+              initial={reduce ? false : { opacity: 0, y: 12 }}
+              whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.35, delay: i * 0.04 }}
             >
               <p className="font-display text-lg italic text-ink">
                 “{q.text}”
@@ -25,13 +37,9 @@ export function ReviewStack() {
               <p className="mt-2 text-xs uppercase tracking-[0.14em] text-ink-mute/70">
                 {q.source}
               </p>
-            </li>
+            </motion.li>
           ))}
         </ul>
-        <p className="mt-6 text-sm text-ink-mute">
-          Themes paraphrased from public directories and reviews — confirm live
-          Google rating before hard-coding stars in print.
-        </p>
       </div>
     </section>
   );

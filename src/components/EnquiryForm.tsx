@@ -17,7 +17,7 @@ export function EnquiryForm() {
       <p className="font-display text-xl text-ink">Price enquiry</p>
       <p className="text-sm text-ink-mute">
         No invented price list online — tell us the garment and we&apos;ll point
-        you to a call or in-store ask. Demo form does not send email.
+        you to a call or in-store ask. 
       </p>
       <label className="block text-sm">
         <span className="text-ink-mute">Name</span>

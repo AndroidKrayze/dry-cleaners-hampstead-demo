@@ -46,12 +46,16 @@ export function Footer() {
         </div>
         <div>
           <p className="text-xs uppercase tracking-[0.16em] text-mist/60">
-            Drop off
+            Suggested domains
           </p>
-          <p className="mt-3 text-sm text-mist/80">
+          <ul className="mt-3 space-y-1 font-mono text-xs text-mist/70">
+            {siteConfig.suggestedDomains.map((d) => (
+              <li key={d}>{d}</li>
+            ))}
+          </ul>
+          <p className="mt-4 text-sm text-mist/80">
             Phone or walk-in. Ask in store for prices and payment options.
           </p>
-          <p className="mt-4 text-xs text-mist/50">{siteConfig.demoNote}</p>
         </div>
       </div>
     </footer>

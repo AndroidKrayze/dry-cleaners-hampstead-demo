@@ -21,8 +21,11 @@ export default function HomePage() {
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-mist/85 sm:text-lg">
               Your neighbourhood dry cleaners on Haverstock Hill — dry cleaning,
-              silk care, alterations and shoe repair in Belsize Park. Finally
-              with a proper site.
+              silk care, alterations and shoe repair in Belsize Park.
+            </p>
+            <p className="mt-3 text-sm font-medium text-cobalt">
+              ★ {siteConfig.rating.value} Google
+              {siteConfig.rating.confirm ? " · confirm live" : ""}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <CallLink className="!bg-cobalt hover:!bg-cobalt/90">
@@ -91,7 +94,7 @@ export default function HomePage() {
               Silk care on Haverstock Hill.
             </p>
             <p className="mt-4 text-sm text-ink-mute">
-              Typography + mist grid — no invented shop photos.
+              Careful silk and everyday dry cleaning on Haverstock Hill.
             </p>
           </div>
           <div>
