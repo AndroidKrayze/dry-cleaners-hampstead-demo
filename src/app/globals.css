@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0b1f33;
+  --ink-mute: #1a3348;
+  --mist: #e8eef2;
+  --crisp: #fafbfc;
+  --cobalt: #2f6fed;
+  --hairline: #c5d0d8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--ink);
+  background: var(--crisp);
+}
+
+@layer utilities {
+  .ticket-notch {
+    background:
+      radial-gradient(circle at 0 50%, transparent 6px, #fafbfc 6.5px) left / 12px 100% no-repeat,
+      radial-gradient(circle at 100% 50%, transparent 6px, #fafbfc 6.5px) right / 12px 100% no-repeat,
+      #fafbfc;
+  }
+  .receipt-dash {
+    background-image: repeating-linear-gradient(
+      to right,
+      var(--hairline) 0,
+      var(--hairline) 4px,
+      transparent 4px,
+      transparent 8px
+    );
+    height: 1px;
+  }
+  .mist-grid {
+    background-color: #e8eef2;
+    background-image:
+      linear-gradient(rgba(11, 31, 51, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(11, 31, 51, 0.04) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .stitch-underline {
+    background-image: linear-gradient(to right, #2f6fed, #2f6fed);
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-position: 0 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

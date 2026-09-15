@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://androidkrayze.github.io/dry-cleaners-hampstead-demo/sitemap.xml
