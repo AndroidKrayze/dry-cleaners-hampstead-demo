@@ -4,7 +4,9 @@ import { siteConfig } from "@/lib/site.config";
 import { withBase } from "@/lib/paths";
 
 export function Gallery() {
-  const shots = siteConfig.photos;
+  const shots = siteConfig.photos.filter((p) => p.file !== "hero.jpg");
+
+  if (shots.length === 0) return null;
 
   return (
     <section
@@ -21,11 +23,11 @@ export function Gallery() {
           80 Haverstock Hill
         </h2>
         <p className="mt-3 max-w-xl text-sm leading-relaxed text-ink-mute">
-          Real storefront photos of this shop — Google listing and Street View of
-          the fascia at number 80.
+          Real storefront photos of this shop — Street View of the fascia at
+          number 80.
         </p>
 
-        <div className="mt-8 grid gap-3 sm:gap-4 md:grid-cols-2">
+        <div className="mt-8 grid grid-cols-1 gap-3 sm:gap-4">
           {shots.map((shot) => (
             <figure
               key={shot.file}

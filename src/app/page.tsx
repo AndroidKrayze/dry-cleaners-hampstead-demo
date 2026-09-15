@@ -10,27 +10,17 @@ import { Gallery } from "@/components/Gallery";
 export default function HomePage() {
   return (
     <>
-      <section className="relative isolate overflow-hidden bg-ink text-crisp">
-        <div className="relative">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={withBase("/assets/hero.jpg")}
-            alt="Dry Cleaners of Hampstead storefront at 80 Haverstock Hill"
-            className="h-[46vh] w-full object-cover object-[center_35%] sm:h-[58vh] lg:h-[70vh]"
-          />
-          <div
-            className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/25"
-            aria-hidden
-          />
-          <div className="absolute inset-x-0 bottom-0 mx-auto max-w-6xl px-4 pb-10 pt-24 sm:px-6 sm:pb-14">
+      <section className="relative overflow-hidden bg-ink text-crisp">
+        <div className="relative mx-auto grid max-w-6xl gap-0 lg:grid-cols-2 lg:items-stretch">
+          <div className="relative z-10 flex flex-col justify-center px-4 py-14 sm:px-6 lg:py-24">
             <p className="text-xs uppercase tracking-[0.22em] text-cobalt">
               Silk specialists · Haverstock Hill
             </p>
-            <h1 className="mt-3 max-w-3xl font-display text-4xl leading-tight sm:text-5xl lg:text-6xl">
+            <h1 className="mt-4 font-display text-4xl leading-tight sm:text-5xl lg:text-6xl">
               Pressed. Protected.{" "}
               <span className="italic text-mist">Ready.</span>
             </h1>
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-mist/85 sm:text-lg">
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-mist/85 sm:text-lg">
               Your neighbourhood dry cleaners on Haverstock Hill — dry cleaning,
               silk care, alterations and shoe repair in Belsize Park.
             </p>
@@ -38,7 +28,7 @@ export default function HomePage() {
               ★ {siteConfig.rating.value} Google · {siteConfig.rating.count}{" "}
               reviews
             </p>
-            <div className="mt-6 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap gap-3">
               <CallLink className="!bg-cobalt hover:!bg-cobalt/90">
                 Call {siteConfig.phoneDisplay}
               </CallLink>
@@ -58,8 +48,30 @@ export default function HomePage() {
               </a>
             </div>
           </div>
+
+          <div className="relative h-[42vh] min-h-[240px] sm:h-[48vh] lg:h-auto lg:min-h-full">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={withBase("/assets/hero.jpg")}
+              alt="Dry Cleaners of Hampstead storefront at 80 Haverstock Hill"
+              className="absolute inset-0 h-full w-full object-cover object-[center_35%]"
+            />
+            <div
+              className="absolute inset-0 bg-gradient-to-t from-ink/50 via-transparent to-transparent lg:bg-gradient-to-r lg:from-ink/40 lg:via-transparent lg:to-transparent"
+              aria-hidden
+            />
+            <div className="absolute bottom-4 left-4 right-4 flex flex-wrap gap-2 sm:bottom-6 sm:left-6">
+              <span className="rounded-full bg-crisp/95 px-3 py-1.5 text-[11px] font-medium uppercase tracking-[0.16em] text-ink">
+                ★ {siteConfig.rating.value} · {siteConfig.rating.count} reviews
+              </span>
+              <span className="rounded-full border border-crisp/40 bg-ink/50 px-3 py-1.5 text-[11px] uppercase tracking-[0.16em] text-crisp backdrop-blur">
+                80 Haverstock Hill
+              </span>
+            </div>
+          </div>
         </div>
       </section>
+
 
       <section
         className="border-b border-hairline bg-crisp"
