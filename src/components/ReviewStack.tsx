@@ -25,8 +25,8 @@ export function ReviewStack() {
             <motion.li
               key={i}
               className="border-l-[3px] border-cobalt bg-crisp px-5 py-4 shadow-stub"
-              initial={reduce ? false : { opacity: 0, y: 12 }}
-              whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
+              initial={false}
+              whileInView={reduce ? undefined : { y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.35, delay: i * 0.04 }}
             >

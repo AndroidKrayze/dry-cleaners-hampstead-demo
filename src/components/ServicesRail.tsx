@@ -33,8 +33,8 @@ export function ServicesRail() {
       <div className="mt-8 overflow-x-auto pb-4 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         <motion.div
           className="mx-auto flex w-max gap-4 px-4 sm:px-6"
-          initial={reduce ? false : { opacity: 0, y: 12 }}
-          whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
+          initial={false}
+          whileInView={reduce ? undefined : { y: 0 }}
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.4 }}
         >
