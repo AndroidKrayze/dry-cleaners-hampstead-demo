@@ -8,7 +8,6 @@ import { CallLink } from "./CallLink";
 
 const links = [
   { href: "/services/", label: "Services" },
-  { href: "/#visit", label: "Visit" },
   { href: "/prices/", label: "Prices" },
   { href: "/about/", label: "Care" },
   { href: "/visit/", label: "Visit" },
