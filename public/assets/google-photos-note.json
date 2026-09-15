@@ -1,21 +1,11 @@
 {
-  "listing": "Dry Cleaners Of Hampstead",
-  "address": "80 Haverstock Hill, London NW3 2BE, United Kingdom",
-  "phone": "+44 20 7284 4905",
-  "rating": 5.0,
-  "reviewCount": 28,
-  "photoCount": 1,
-  "photoCountNote": "Google Maps listing gallery showed one listing photo; Street View frames of this frontage saved separately.",
-  "imagesSaved": [
-    {"file": "hero.jpg", "type": "Google Maps user-contributed listing photo", "dateShown": "Sep 2024", "credit": "Tiina Larmila"},
-    {"file": "hero-full.jpg", "type": "Google Maps listing photo full vertical", "dateShown": "Sep 2024", "credit": "Tiina Larmila"},
-    {"file": "shop-1.jpg", "type": "Google Street View", "panoid": "GDUA1mmC7d0qwgqSl7kpDw", "yaw": 55},
-    {"file": "shop-2.jpg", "type": "Google Street View", "panoid": "GDUA1mmC7d0qwgqSl7kpDw", "yaw": 50},
-    {"file": "shop-3.jpg", "type": "Google Street View", "panoid": "GDUA1mmC7d0qwgqSl7kpDw", "yaw": 45},
-    {"file": "shop-4.jpg", "type": "Google Street View", "panoid": "GDUA1mmC7d0qwgqSl7kpDw", "yaw": 35},
-    {"file": "shop-5.jpg", "type": "Google Street View", "panoid": "GDUA1mmC7d0qwgqSl7kpDw", "yaw": 65},
-    {"file": "shop-6.jpg", "type": "Google Street View", "panoid": "GDUA1mmC7d0qwgqSl7kpDw", "yaw": 40},
-    {"file": "shop-7.jpg", "type": "Google Maps listing photo crop", "dateShown": "Sep 2024", "credit": "Tiina Larmila"}
+  "business": "Dry Cleaners of Hampstead",
+  "address": "80 Haverstock Hill, NW3 2BE",
+  "pulled": "2026-09-15",
+  "trimmed": "2026-09-15",
+  "kept": [
+    {"file": "hero.jpg", "type": "Google Maps listing photo", "dateShown": "Sep 2024", "credit": "Tiina Larmila"},
+    {"file": "shop-1.jpg", "type": "Google Street View", "panoid": "GDUA1mmC7d0qwgqSl7kpDw", "yaw": 55}
   ],
-  "checkedAt": "2026-09-15T18:22:00+01:00"
+  "note": "Removed duplicate Street View yaws and listing crops from the gallery."
 }
