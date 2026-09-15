@@ -37,15 +37,7 @@ export function Gallery() {
           </p>
         </motion.div>
 
-        <div
-          className={`mt-8 grid gap-3 sm:gap-4 ${
-            shots.length === 1
-              ? "grid-cols-1"
-              : shots.length === 2
-                ? "md:grid-cols-2"
-                : "md:grid-cols-12"
-          }`}
-        >
+        <div className="mt-8 grid gap-3 sm:gap-4 md:grid-cols-2">
           {shots.map((shot, i) => (
             <motion.figure
               key={shot.file}
