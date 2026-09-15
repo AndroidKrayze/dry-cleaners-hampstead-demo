@@ -15,7 +15,7 @@ export function Gallery() {
       aria-labelledby="gallery-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <p className="text-xs uppercase tracking-[0.2em] text-cobalt">Gallery</p>
+        <p className="text-xs uppercase tracking-[0.2em] text-cobalt">Visit</p>
         <h2
           id="gallery-heading"
           className="mt-2 font-display text-3xl text-ink sm:text-4xl"
