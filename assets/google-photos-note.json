@@ -1,0 +1,11 @@
+{
+  "business": "Dry Cleaners of Hampstead",
+  "address": "80 Haverstock Hill, NW3 2BE",
+  "pulled": "2026-09-15",
+  "trimmed": "2026-09-15",
+  "kept": [
+    {"file": "hero.jpg", "type": "Google Maps listing photo", "dateShown": "Sep 2024", "credit": "Tiina Larmila"},
+    {"file": "shop-1.jpg", "type": "Google Street View", "panoid": "GDUA1mmC7d0qwgqSl7kpDw", "yaw": 55}
+  ],
+  "note": "Removed duplicate Street View yaws and listing crops from the gallery."
+}
