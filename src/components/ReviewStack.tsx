@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site.config";
 export function ReviewStack() {
   const reduce = useReducedMotion();
   return (
-    <section className="bg-mist/60 py-14" aria-labelledby="reviews-heading">
+    <section className="bg-mist/60 py-10 sm:py-12" aria-labelledby="reviews-heading">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <p className="text-xs uppercase tracking-[0.2em] text-cobalt">
           Neighbourhood word-of-mouth

@@ -8,7 +8,7 @@ import { motion, useReducedMotion } from "framer-motion";
 export function ServicesRail() {
   const reduce = useReducedMotion();
   return (
-    <section className="py-14" aria-labelledby="services-rail-heading">
+    <section className="py-10 sm:py-12" aria-labelledby="services-rail-heading">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex items-end justify-between gap-4">
           <div>

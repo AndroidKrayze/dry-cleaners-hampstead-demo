@@ -3,7 +3,7 @@ import { CallLink } from "./CallLink";
 
 export function CallBand() {
   return (
-    <section className="bg-ink py-14 text-crisp">
+    <section className="bg-ink py-10 sm:py-12 text-crisp">
       <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 px-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
         <div>
           <p className="text-xs uppercase tracking-[0.2em] text-cobalt">
