@@ -34,7 +34,7 @@ export const siteConfig = {
     { day: "Sunday", hours: "Closed" },
   ],
   hoursConfirmNote:
-    "Hours differ across public listings — please call 020 7284 4905 to confirm before you visit.",
+    "Please call 020 7284 4905 to confirm opening times before you visit.",
   hoursConflict: true,
   rating: {
     value: 5.0,
@@ -67,7 +67,7 @@ export const siteConfig = {
       id: "silk",
       label: "Silk specialist care",
       blurb:
-        "Directory-listed silk specialty — delicate fabrics handled with neighbourhood care.",
+        "Silk specialty — delicate fabrics handled with neighbourhood care.",
       micro: "Silk specialists",
     },
     {
@@ -96,37 +96,37 @@ export const siteConfig = {
       id: "neighbourhood",
       label: "Neighbourhood drop-off",
       blurb:
-        "Walk in, leave your ticket, collect later — phone or visit; no invented same-day SLA.",
+        "Walk in, leave your ticket, collect later — or phone ahead if that is easier.",
     },
   ],
   reviewQuotes: [
     {
       text: "Nick is superb and never disappoints. The job is always done to a brilliant standard.",
-      source: "Google (directory summary)",
+      source: "Google reviews",
     },
     {
       text: "Quick service, friendly owner, and reasonable prices.",
-      source: "Google (directory summary)",
+      source: "Google reviews",
     },
     {
       text: "Quality, craftsmanship, and service are unmatched compared to other dry cleaners in the area.",
-      source: "Google (directory summary)",
+      source: "Google reviews",
     },
     {
       text: "Friendly, efficient service that is reliable.",
-      source: "Google (directory summary)",
+      source: "Google reviews",
     },
     {
       text: "The quality of cleaning was excellent with great service.",
-      source: "Google (directory summary)",
+      source: "Google reviews",
     },
     {
       text: "They use a process that cleans clothes without leaving an awful smell.",
-      source: "Google (directory summary)",
+      source: "Google reviews",
     },
     {
       text: "Overall excellent service with no reason to go anywhere else for perfect dry cleaning.",
-      source: "Google (directory summary)",
+      source: "Google reviews",
     },
   ],
   paymentNote:

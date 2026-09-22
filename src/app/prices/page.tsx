@@ -7,7 +7,7 @@ import { CallBand } from "@/components/CallBand";
 export const metadata: Metadata = {
   title: "Prices",
   description:
-    "Price on request — call Dry Cleaners of Hampstead on 020 7284 4905 or ask in store. No invented price list.",
+    "Price on request — call Dry Cleaners of Hampstead on 020 7284 4905 or ask in store.",
 };
 
 const rows = [
@@ -28,8 +28,8 @@ export default function PricesPage() {
             Prices on request
           </h1>
           <p className="mt-4 max-w-2xl text-ink-mute">
-            We don&apos;t invent a £ list online. Every row below is enquire /
-            call — honest for a neighbourhood cleaner.
+            Prices depend on the garment — every row below is enquire /
+            call.
           </p>
         </div>
       </section>

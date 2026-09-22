@@ -22,8 +22,7 @@ export default function ServicesPage() {
             Services on Haverstock Hill
           </h1>
           <p className="mt-4 max-w-2xl text-mist/85">
-            Directory-backed services — each ticket ends with a call to the
-            shop. No invented online booking or lockers.
+            Each ticket ends with a call to the shop. Call or drop in to arrange drop-off.
           </p>
         </div>
       </section>

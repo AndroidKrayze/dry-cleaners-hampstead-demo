@@ -13,7 +13,7 @@ export function CallBand() {
             Drop in — or call first.
           </h2>
           <p className="mt-2 max-w-lg text-mist/80">
-            One number on every button: the shop line on Haverstock Hill.
+            Call the shop on Haverstock Hill — we'll take it from there.
           </p>
         </div>
         <CallLink className="!bg-cobalt !text-crisp hover:!bg-cobalt/90 hover:!ring-crisp/30">

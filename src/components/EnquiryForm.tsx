@@ -16,7 +16,7 @@ export function EnquiryForm() {
     >
       <p className="font-display text-xl text-ink">Price enquiry</p>
       <p className="text-sm text-ink-mute">
-        No invented price list online — tell us the garment and we&apos;ll point
+        Tell us the garment and we&apos;ll point
         you to a call or in-store ask. 
       </p>
       <label className="block text-sm">

@@ -22,8 +22,8 @@ export default function AboutPage() {
             Careful hands on Haverstock Hill
           </h1>
           <p className="mt-4 max-w-2xl text-mist/85">
-            A neighbourhood dry cleaner — silk specialty listed publicly —
-            without inventing biography, awards, or certifications.
+            A neighbourhood dry cleaner with a publicly listed silk specialty —
+            focused on careful work for the clothes you bring in.
           </p>
         </div>
       </section>
@@ -37,9 +37,9 @@ export default function AboutPage() {
               <strong className="font-medium text-ink">
                 {siteConfig.name}
               </strong>{" "}
-              as specialising in silk. That reputation sits alongside general dry
-              cleaning, clothing alterations &amp; repairs, and shoe repair —
-              fuller service than “just dry cleaning.”
+              as specialising in silk. That sits alongside general dry cleaning,
+              clothing alterations &amp; repairs, and shoe repair — a fuller
+              service than dry cleaning alone.
             </p>
           </div>
           <div className="overflow-hidden rounded-lg border border-hairline">
@@ -53,15 +53,12 @@ export default function AboutPage() {
           </div>
           <div>
             <h2 className="font-display text-2xl text-ink">
-              What guests say (themes)
+              What guests say
             </h2>
             <ul className="mt-4 list-disc space-y-2 pl-5 text-ink-mute">
               <li>Careful with delicate and expensive items</li>
               <li>Friendly, gentlemanly service</li>
-              <li>
-                Less chemical smell / greener feel in-shop — soft review theme
-                only; no fake eco badges
-              </li>
+              <li>Clothes come back fresh, without a harsh chemical smell</li>
               <li>Reliable quality versus other local cleaners</li>
             </ul>
           </div>
@@ -69,9 +66,8 @@ export default function AboutPage() {
             <h2 className="font-display text-2xl text-ink">On the street</h2>
             <p className="mt-3 leading-relaxed text-ink-mute">
               You&apos;ll find us at {siteConfig.address.full}, near Belsize
-              Park tube. Jimmy&apos;s Barber is further along at 92 — a different
-              business entirely. Phone or walk in; we don&apos;t invent online
-              booking.
+              Park tube. Call ahead or walk in — we&apos;re happy to help with
+              drop-off and collection.
             </p>
             <div className="mt-6">
               <CallLink />

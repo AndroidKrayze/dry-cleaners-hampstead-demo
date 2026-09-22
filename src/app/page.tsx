@@ -97,13 +97,12 @@ export default function HomePage() {
             id="silk-heading"
             className="mt-2 max-w-2xl font-display text-3xl text-ink sm:text-4xl"
           >
-            Directory-listed silk specialists
+            Silk specialists
           </h2>
           <p className="mt-4 max-w-2xl text-ink-mute leading-relaxed">
-            Public listings note a specialty in silk. We keep the story honest:
-            careful neighbourhood craft, not invented process jargon or fake eco
-            badges. Delicate and designer pieces get the same call-first approach
-            as everyday dry cleaning.
+            Public listings note a specialty in silk. Delicate and designer
+            pieces get the same careful neighbourhood care as everyday dry
+            cleaning — call ahead or drop in on Haverstock Hill.
           </p>
           <Link
             href="/about/"
